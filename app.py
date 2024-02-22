@@ -3,7 +3,10 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 def add(x, y):
-    return x + y
+    return x + 
+
+def multiply(x, y):
+    return x * y    
 
 @app.route("/calc/<operation>/<int:x>/<int:y>")
 def calc(operation, x, y):
