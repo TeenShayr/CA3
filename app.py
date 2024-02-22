@@ -11,6 +11,10 @@ def add(x, y):
 def multiply(x, y):
     return x * y    
 
+@app.route("/hello")
+def hello():
+    return "Hello World"
+
 @app.route("/calc/<operation>/<int:x>/<int:y>")
 def calc(operation, x, y):
     result = None
@@ -28,5 +32,5 @@ def calc(operation, x, y):
 
 if __name__ == "__main__":
     # Run the app on port 5000
-    app.run(port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
 
