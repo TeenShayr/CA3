@@ -33,4 +33,4 @@ jobs:
         with:
           # Use the same tag as in step 3
           push: true
-          tags: <dockkerhubaccount>/CA3:latest
+          tags: ghalibkshagird/ca3:latest
