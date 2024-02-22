@@ -2,6 +2,9 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
+def subtract(x, y):
+    return x - y
+
 def add(x, y):
     return x + y
 
@@ -23,3 +26,4 @@ def calc(operation, x, y):
 if __name__ == "__main__":
     # Run the app on port 5000
     app.run(port=5000, debug=True)
+
