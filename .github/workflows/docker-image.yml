@@ -33,4 +33,4 @@ jobs:
         with:
           # Use the same tag as in step 3
           push: true
-          tags: ghalibkshagird/ca3:latest
+          tags: teenshayr/ca3:latest
